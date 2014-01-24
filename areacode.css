@@ -1,0 +1,49 @@
+body {
+  background-color:#539BF8;
+}
+
+div#generator {
+  background-color: white;
+  position: absolute;
+  left:50%;
+  top:50%;
+  text-align: center;
+  margin-left: -400px;
+  margin-top: -300px;
+  height: 600px;
+  width: 800px;
+}
+
+div#code {
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 128px;
+}
+
+div#country {
+  font-family: 'Chicle', cursive;
+  font-size: 28px;
+}
+
+div#state {
+  font-family: 'Chicle', cursive;
+  font-size: 28px;
+}
+
+div#area {
+  font-family: 'Chicle', cursive;
+  font-size: 28px;
+}
+
+h1 {
+  font-family: 'Fontdiner Swanky', cursive;
+  font-size:42px;
+}
+
+h2 {
+  font-family: 'Londrina Shadow', cursive;
+  font-size: 42px;
+}
+
+div#footer {
+  font-family: 'Chicle', cursive;
+}

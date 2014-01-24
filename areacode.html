@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="areacode.css">
+    <link href='http://fonts.googleapis.com/css?family=Chicle|Fontdiner+Swanky|Londrina+Shadow|Allerta+Stencil' rel='stylesheet' type='text/css'>
+    <script src="USAreaCodes.js"></script>
+    <script>
+      function getRandomArea() {
+        return areaCodes[Math.floor(Math.random()*areaCodes.length)];
+      }
+
+      function setNewArea() {
+        var area = getRandomArea();
+
+        var codeElement = document.getElementById('code');
+        var countryElement = document.getElementById('country');
+        var stateElement = document.getElementById('state');
+        var areaElement = document.getElementById('area');
+
+        codeElement.innerHTML = area['code'];
+        countryElement.innerHTML = area['country'];
+        stateElement.innerHTML = area['state'];
+        areaElement.innerHTML = area['area'];
+      }
+
+    </script>
+  </head>
+  <body>
+    <div id='generator'>
+      <h1>North America<br />Random Phone Code Chooser</h1>
+      <div id='code' onClick='setNewArea();'>Click Here</div>
+      <h2>Area Details:</h2>
+      <div id='country'></div>
+      <div id='state'></div>
+      <div id='area'></div>
+    </div>
+  </body>
+</html>
